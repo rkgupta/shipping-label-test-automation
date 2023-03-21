@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="templates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="template"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="template">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="region"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:string"/>
+      <xs:attribute name="lineWidth" type="xs:decimal"/>
+      <xs:attribute name="lineWidthBottom" type="xs:decimal"/>
+      <xs:attribute name="lineWidthLeft" type="xs:decimal"/>
+      <xs:attribute name="lineWidthRight" type="xs:decimal"/>
+      <xs:attribute name="lineWidthTop" type="xs:decimal"/>
+      <xs:attribute name="padding" type="xs:decimal"/>
+      <xs:attribute name="paddingBottom" type="xs:decimal"/>
+      <xs:attribute name="paddingLeft" type="xs:decimal"/>
+      <xs:attribute name="paddingRight" type="xs:decimal"/>
+      <xs:attribute name="paddingTop" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="region">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="left"/>
+        <xs:element ref="top"/>
+        <xs:element ref="width"/>
+        <xs:element ref="height"/>
+      </xs:sequence>
+      <xs:attribute name="id" use="required" type="xs:string"/>
+      <xs:attribute name="lineWidth" type="xs:decimal"/>
+      <xs:attribute name="lineWidthBottom" type="xs:decimal"/>
+      <xs:attribute name="lineWidthLeft" type="xs:decimal"/>
+      <xs:attribute name="lineWidthRight" type="xs:decimal"/>
+      <xs:attribute name="lineWidthTop" type="xs:decimal"/>
+      <xs:attribute name="padding" type="xs:decimal"/>
+      <xs:attribute name="paddingBottom" type="xs:decimal"/>
+      <xs:attribute name="paddingLeft" type="xs:decimal"/>
+      <xs:attribute name="paddingRight" type="xs:decimal"/>
+      <xs:attribute name="paddingTop" type="xs:decimal"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="left" type="xs:decimal"/>
+  <xs:element name="top" type="xs:decimal"/>
+  <xs:element name="width" type="xs:decimal"/>
+  <xs:element name="height" type="xs:decimal"/>
+</xs:schema>

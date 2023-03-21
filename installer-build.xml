@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyProject" default="package">
+	<!-- Name of the output .jar file -->
+	<property name="jar.file" value="LabelTestAutomation.jar" />
+	
+	<!-- Base directory for distribution target -->
+	<property name="src.dir" value="src/main/java" />
+	
+	<!-- Base directory for distribution target -->
+	<property name="dest.dir" value="build" />
+	
+	<!--The resources directory-->
+	<property name="resources.dir" value="src/main/resources" />
+
+	<!-- The base directory for all libraries (jar) files -->
+	<property name="lib.dir" value="lib" />
+
+	<!-- Main class -->
+	<property name="manifest.main.class" value="com.pb.testautomation.label.engine.LabelComparatorEngine" />
+	
+	<!-- First, I create my classpath (build.classpath) from all the jar files in my lib directory -->
+	<path id="build.classpath">
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<!--Initialize before compilation-->
+	<target name="init">
+		<mkdir dir="${dest.dir}"/>
+	</target>
+	
+	<!-- The compile task-->
+	<target name="compile" depends="init">
+	    <javac srcdir="${src.dir}" destdir="${dest.dir}" classpathref="build.classpath" includeAntRuntime="false" debug="true" />
+	</target>
+
+	<!-- The packaging task-->
+	<target name="package" depends="compile">
+		<echo>=== packaging LabelTestAutomation.jar ===</echo>
+
+		<!-- convert build.classpath to mf.classpath (the string needed for the manifest task) -->
+		<pathconvert property="mf.classpath" pathsep=" ">
+			<path refid="build.classpath" />
+			<flattenmapper />
+		</pathconvert>
+
+		<!-- needed for TODAY -->
+		<tstamp/>
+		
+		<!-- now build the manifest file, using mf.classpath -->
+		<manifest file="MANIFEST.MF">
+			<attribute name="Built-Date" value="${TODAY}"/>
+			<attribute name="Rsrc-Class-Path" value="./ ${mf.classpath}" />
+			<attribute name="Class-Path" value="." />
+			<attribute name="Rsrc-Main-Class" value="${manifest.main.class}"/>
+			<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+		</manifest>
+
+		<!-- copy all the required files out to the destination directory (dest.dir) -->
+		<copy todir="${dest.dir}">
+			<fileset dir="${resources.dir}">
+				<include name="*.properties"/>
+			</fileset>
+		</copy>
+		<delete file="${jar.file}" />
+		
+		<!-- create the jar file, including the manifest file we just created -->
+		<jar basedir="${dest.dir}" 
+			destfile="${jar.file}"
+			includes="**/*.*"
+			excludes="**/*Test*"
+			manifest="MANIFEST.MF"
+			duplicate="preserve">	
+		</jar>
+		
+		<!-- Finally delete the redundant files/directories-->
+		<delete file="MANIFEST.MF" />
+	</target>
+</project>

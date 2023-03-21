@@ -1,0 +1,195 @@
+<labelsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="config.xsd">
+	<templates> 
+		<template id="2X7_NonExpress">
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<maskableRegion id="1">
+				<regionType>image</regionType> <!-- image/text -->
+				<left>2.46</left>
+				<top>0.56</top>
+				<width>3.16</width>
+				<height>0.84</height>
+			</maskableRegion>
+			<maskableRegion id="2">	<!-- QR Code -->
+				<regionType>image</regionType>
+				<left>5.87</left>
+				<top>0.89</top>
+				<width>0.85</width>
+				<height>0.85</height>
+			</maskableRegion>
+			<maskableRegion id="3">	<!-- date -->
+				<regionType>text</regionType>
+				<left>5.85</left>
+				<top>0.11</top>
+				<width>0.47</width>
+				<height>0.1</height>
+			</maskableRegion>
+			<maskableRegion id="4">	<!-- barcode text -->
+				<regionType>text</regionType>
+				<left>3.01</left>
+				<top>1.52</top>
+				<width>2.08</width>
+				<height>.1</height>
+			</maskableRegion>
+			<maskableRegion id="5">	<!-- Commercial Base Pricing Text -->
+				<regionType>text</regionType>
+				<left>5.97</left>
+				<top>1.95</top>
+				<width>0.64</width>
+				<height>.07</height>
+			</maskableRegion>
+		</template>
+		<template id="ExpMail8.5X11Domestic_landscape_part1"> 
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<maskableRegion id="1">
+				<regionType>image</regionType> <!-- barcode -->
+				<left>1.63</left>
+				<top>0.52</top>
+				<width>0.87</width>
+				<height>2.94</height>
+			</maskableRegion>
+			<maskableRegion id="2">	<!-- QR Code -->
+				<regionType>image</regionType>
+				<left>5.15</left>
+				<top>3.03</top>
+				<width>0.85</width>
+				<height>0.85</height>
+			</maskableRegion>
+			<maskableRegion id="3">	<!-- date -->
+				<regionType>text</regionType>
+				<left>5.7</left>
+				<top>1.06</top>
+				<width>0.11</width>
+				<height>0.55</height>
+			</maskableRegion>
+			<maskableRegion id="5">	<!-- Commercial Number-->
+				<regionType>text</regionType>
+				<left>5.3</left>
+				<top>1.93</top>
+				<width>0.1</width>
+				<height>0.89</height>
+			</maskableRegion>
+			<maskableRegion id="6">	<!-- barcode text -->
+				<regionType>text</regionType>
+				<left>1.42</left>
+				<top>1.39</top>
+				<width>0.12</width>
+				<height>1.23</height>
+			</maskableRegion>
+		</template>
+		<template id="ExpMail8.5X11Domestic_landscape_part2"> 
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<maskableRegion id="1">	<!-- barcode text -->
+				<regionType>text</regionType>
+				<left>4.25</left>
+				<top>1.38</top>
+				<width>1.47</width>
+				<height>0.14</height>
+			</maskableRegion>
+			<maskableRegion id="2">	<!-- barcode -->
+				<regionType>image</regionType>
+				<left>3.25</left>
+				<top>0.48</top>
+				<width>2.91</width>
+				<height>0.85</height>
+			</maskableRegion>
+		</template>
+		<template id="Stamp_PriorityMail"> 
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<maskableRegion id="1">	<!-- QR Code-->
+				<regionType>image</regionType>
+				<left>204</left>
+				<top>0</top>
+				<width>241</width>
+				<height>240</height>
+			</maskableRegion>
+			<maskableRegion id="2">	<!-- Commercial Number -->
+				<regionType>image</regionType>
+				<left>8</left>
+				<top>124</top>
+				<width>165</width>
+				<height>19</height>
+			</maskableRegion>
+		</template>
+		<template id="SendSuite_img"> 
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<maskableRegion id="1">	<!-- QR Code-->
+				<regionType>image</regionType>
+				<left>32</left>
+				<top>446</top>
+				<width>554</width>
+				<height>251</height>
+			</maskableRegion>
+			<maskableRegion id="2">	<!-- Commercial Number -->
+				<regionType>image</regionType>
+				<left>75</left>
+				<top>768</top>
+				<width>682</width>
+				<height>311</height>
+			</maskableRegion>
+			<maskableRegion id="3">	<!-- Commercial Number -->
+				<regionType>image</regionType>
+				<left>197</left>
+				<top>1089</top>
+				<width>326</width>
+				<height>31</height>
+			</maskableRegion>
+		</template>
+	</templates>
+	 
+	<labelTypeConfig prefix="2X7_NonExpress_Domestic">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.1</templateLeft>
+					<templateTop>0.1</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="ExpMail8.5X11Domestic_landscape">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="ExpMail8.5X11Domestic_landscape_part1">
+					<templateLeft>1.18</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+				<labelSpec ref="ExpMail8.5X11Domestic_landscape_part2">
+					<templateLeft>0.74</templateLeft>
+					<templateTop>5.85</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="Stamp_PriorityMail">
+		<uom>px</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="Stamp_PriorityMail">
+					<templateLeft>0</templateLeft>
+					<templateTop>0</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="SendSuite_img">
+		<uom>px</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="SendSuite_img">
+					<templateLeft>0</templateLeft>
+					<templateTop>0</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+</labelsConfig>

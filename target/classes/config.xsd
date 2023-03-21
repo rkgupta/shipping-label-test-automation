@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+	<xs:element name="labelsConfig">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="templates" maxOccurs="1" />
+				<xs:element maxOccurs="unbounded" ref="labelTypeConfig" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="templates">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="template" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="template">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="maskableRegion" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" />
+			<xs:attribute name="path" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="maskableRegion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="regionType" />
+				<!-- <xs:element minOccurs="0" ref="direction" /> -->
+				<xs:element ref="left" />
+				<xs:element ref="top" />
+				<xs:element ref="width" />
+				<xs:element ref="height" />
+			</xs:sequence>
+			<xs:attribute name="id" use="required" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="regionType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="image" />
+				<xs:enumeration value="text" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<!-- <xs:element name="direction">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="" />
+				<xs:enumeration value="top-to-bottom" />
+				<xs:enumeration value="left-to-right" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element> -->
+	<xs:element name="left" type="xs:decimal" />
+	<xs:element name="top" type="xs:decimal" />
+	<xs:element name="width" type="xs:decimal" />
+	<xs:element name="height" type="xs:decimal" />
+	<xs:element name="labelTypeConfig">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="uom" />
+				<xs:element ref="resolution" minOccurs="0"/>
+				<xs:element ref="pageList" />
+			</xs:sequence>
+			<xs:attribute name="prefix" use="required" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="uom">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[iI][nN]" />
+				<xs:pattern value="[pP][xX]" />
+				<xs:pattern value="[cC][mM]" />
+				<xs:pattern value="[mM][mM]" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="resolution">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="" />
+				<xs:pattern value="\d{0,}" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="pageList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="page" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="page">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" ref="labelSpec" />
+			</xs:sequence>
+			<xs:attribute name="number" use="required" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="labelSpec">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="templateLeft" />
+				<xs:element ref="templateTop" />
+			</xs:sequence>
+			<xs:attribute name="ref" use="required" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="templateLeft" type="xs:decimal" />
+	<xs:element name="templateTop" type="xs:decimal" />
+</xs:schema>

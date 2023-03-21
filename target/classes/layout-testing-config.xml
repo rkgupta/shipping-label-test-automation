@@ -1,0 +1,501 @@
+<labelsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<templates> 
+		<template path="C:\tanuj\eclipse-SDK-3.6.1-win32\workspace\PBWSTestFramework\src\main\resources"/>
+		<template id="SendSuite"  padding="1" lineWidth="1">  <!-- paddingLeft="2" paddingRight="2" paddingTop="2" paddingBottom="2" -->
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<region id="from" paddingLeft="25" paddingBottom="8" paddingRight="250">
+				<left>0</left>
+				<top>0</top>
+				<width>475</width>
+				<height>158</height>
+			</region>
+			<region id="ship_box" paddingBottom="90" paddingRight="95">
+				<left>478</left>
+				<top>0</top>
+				<width>322</width>
+				<height>158</height>
+			</region>
+			<!-- <region id="to">
+				<left>0</left>
+				<top>163</top>
+				<width>798</width>
+				<height>249</height>
+			</region> -->
+		</template>
+		<template id="8.5X11_NonExpress_Priority" padding="1" lineWidth="1">  <!-- paddingLeft="2" paddingRight="2" paddingTop="2" paddingBottom="2" -->
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<region id="from_address" lineWidth="0.17" lineWidthLeft="0" lineWidthBottom="0" paddingTop="1.53">
+				<left>98.25</left>
+				<top>0</top>
+				<width>15.95</width>
+				<height>68.7</height>
+			</region>
+			<region id="mail_class_name" lineWidth="0.17" paddingTop="16.52" paddingBottom="16.05">
+				<left>114.22</left>
+				<top>0</top>
+				<width>9.16</width>
+				<height>101.94</height>
+			</region>
+			<region id="qr_code" lineWidth="0">
+				<left>126.24</left>
+				<top>76.7</top>
+				<width>23</width>
+				<height>23</height>
+			</region>
+			<region id="barcode" lineWidth="0" padding="1">
+				<left>25.24</left>
+				<top>6.7</top>
+				<width>22.99</width>
+				<height>88</height>
+			</region>
+			<region id="to_address" lineWidth="0" lineWidthTop="0.17" paddingTop="11.52">
+				<left>70.25</left>
+				<top>0</top>
+				<width>20.99</width>
+				<height>47.7</height>
+			</region>
+		</template>
+		<template id="Stamp_PriorityMail"  padding="4" paddingRight="15" lineWidth="1">  <!-- paddingLeft="2" paddingRight="2" paddingTop="2" paddingBottom="2" -->
+			<!-- These maskable regions are w.r.t. the bounding box of the template -->
+			<region id="price" paddingLeft="65">
+				<left>0</left>
+				<top>0</top>
+				<width>188</width>
+				<height>45</height>
+			</region>
+			<region id="details" paddingBottom="90" paddingRight="95">
+				<left>478</left>
+				<top>0</top>
+				<width>188</width>
+				<height>192</height>
+			</region>
+			<region id="qr_code" padding="0" paddingLeft="17">
+				<left>185</left>
+				<top>0</top>
+				<width>260</width>
+				<height>240</height>
+			</region>
+		</template>
+		<template id="2X7_NonExpress"  padding="0.01">
+			<region id="from" paddingTop="0.07" paddingBottom="0.04" paddingRight="0.04">
+				<left>0.02</left>
+				<top>0.52</top>
+				<width>1</width>
+				<height>0.6</height>
+			</region>
+			<region id="to" paddingTop="0.07" paddingBottom="0.03" paddingRight="0.05">
+				<left>0.02</left>
+				<top>1.14</top>
+				<width>1</width>
+				<height>0.6</height>
+			</region>
+			<region id="barcode" paddingTop="0.05" paddingBottom="0.02" paddingRight="0.03">
+				<left>2.39</left>
+				<top>0.52</top>
+				<width>3.27</width>
+				<height>0.88</height>
+			</region>
+		</template>
+		<template id="8.5X11_PriorityMail"  padding="0.01">
+			<region id="from" paddingTop="0.08" paddingBottom="0.12" paddingLeft="0.12" paddingRight="0.08">
+				<left>3.86</left>
+				<top>0.14</top>
+				<width>0.75</width>
+				<height>1.75</height>
+			</region>
+			<region id="to" padding="0.08">
+				<left>3</left>
+				<top>0.89</top>
+				<width>0.80</width>
+				<height>1.62</height>
+			</region>
+			<region id="type_text" lineWidth="0.01" padding="0.06" paddingTop="0.64" paddingBottom="0.60">
+				<left>4.71</left>
+				<top>0</top>
+				<width>0.33</width>
+				<height>4.01</height>
+			</region>
+			<region id="qr_code" padding="0.05">
+				<left>5.05</left>
+				<top>3.05</top>
+				<width>0.95</width>
+				<height>0.95</height>
+			</region>
+		</template>
+		<template id="8.5X11_ExpMail" lineWidth="0.007" padding="0.01">
+			<region id="from" paddingBottom="0.12">
+				<left>4.07</left>
+				<top>0.05</top>
+				<width>0.59</width>
+				<height>1.60</height>
+			</region>
+			<region id="to" padding="0.08">
+				<left>3.07</left>
+				<top>0.40</top>
+				<width>0.87</width>
+				<height>1.62</height>
+			</region>
+			<region id="type_text" padding="0.03" paddingTop="0.60" paddingBottom="0.60">
+				<left>4.66</left>
+				<top>0</top>
+				<width>0.39</width>
+				<height>4.01</height>
+			</region>
+		</template>
+		<template id="EMI" lineWidth="0.007" padding="0.01">
+			<region id="date_in_circle" padding="0.01">
+				<left>6.7</left>
+				<top>4.0</top>
+				<width>0.63</width>
+				<height>0.14</height>
+			</region>
+			<region id="from" padding="0.04" paddingRight="1.1">
+				<left>0.0</left>
+				<top>1.06</top>
+				<width>2.61</width>
+				<height>0.87</height>
+			</region>
+			<region id="to" padding="0.04" paddingRight="1.1">
+				<left>0.0</left>
+				<top>1.95</top>
+				<width>2.61</width>
+				<height>0.87</height>
+			</region>
+		</template>
+		<template id="4x6_NonExp" lineWidth="0.007" padding="0.01">
+			<region id="logo" padding="0.01">
+				<left>0</left>
+				<top>0</top>
+				<width>0.79</width>
+				<height>1.1</height>
+			</region>
+			<region id="usps_text" paddingBottom="0.04" paddingTop="0.04" paddingLeft="0.55" paddingRight="0.55">
+				<left>0.0</left>
+				<top>1.1</top>
+				<width>3.79</width>
+				<height>0.31</height>
+			</region>
+			<!-- <region id="address_complete_box" padding="0.04" lineWidthBottom="0.06">
+				<left>0</left>
+				<top>1.41</top>
+				<width>3.79</width>
+				<height>2.23</height>
+			</region> -->
+		</template>
+		<template id="#10" padding="1">
+			<region id="return_address">
+				<left>25</left>
+				<top>14.5</top>
+				<width>71</width>
+				<height>22</height>
+			</region>
+			<region id="indicia_area1">
+				<left>121</left>
+				<top>12.5</top>
+				<width>9</width>
+				<height>20</height>
+			</region>
+			<region id="indicia_area2">
+				<left>130</left>
+				<top>14.5</top>
+				<width>41</width>
+				<height>22</height>
+			</region>
+			<region id="indicia_area3">
+				<left>177</left>
+				<top>14.5</top>
+				<width>22.5</width>
+				<height>27</height>
+			</region>
+			<region id="barcode">
+				<left>58</left>
+				<top>36</top>
+				<width>97</width>
+				<height>26</height>
+			</region>
+			<region id="endorsement_area">
+				<left>16</left>
+				<top>63</top>
+				<width>40</width>
+				<height>15</height>
+			</region>
+			<region id="recipient_address">
+				<left>65</left>
+				<top>63</top>
+				<width>130</width>
+				<height>22</height>
+			</region>
+		</template>
+	</templates>
+	 
+	<labelTypeConfig prefix="SendSuite_img">
+		<uom>px</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="SendSuite">
+					<templateLeft>0</templateLeft>
+					<templateTop>0</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="Stamp_PriorityMail">
+		<uom>px</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="Stamp_PriorityMail">
+					<templateLeft>0</templateLeft>
+					<templateTop>0</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="2X7_NonExpress_Domestic">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.09</templateLeft>
+					<templateTop>0.09</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="2X7_NonExp_Bulk1">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="2">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="3">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="4">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="5">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="6">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="7">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="8">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+			<page number="9">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>4.50</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="8.5X11_PriorityMail">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="8.5X11_PriorityMail">
+					<templateLeft>1.25</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="8.5X11_ExpMail">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="8.5X11_ExpMail">
+					<templateLeft>1.17</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+			<page number="2">
+				<labelSpec ref="8.5X11_ExpMail">
+					<templateLeft>1.17</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+			<page number="3">
+				<labelSpec ref="8.5X11_ExpMail">
+					<templateLeft>1.17</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+			<page number="4">
+				<labelSpec ref="8.5X11_ExpMail">
+					<templateLeft>1.17</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+			<page number="5">
+				<labelSpec ref="8.5X11_ExpMail">
+					<templateLeft>1.17</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+			<page number="6">
+				<labelSpec ref="8.5X11_ExpMail">
+					<templateLeft>1.17</templateLeft>
+					<templateTop>1.34</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="2X7_NonExp_PP_Bulk2">
+		<uom>in</uom><!-- 	cm, in, px(in case of image) -->
+		<resolution></resolution><!-- 	Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>0.60</templateTop>
+				</labelSpec>
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>3.20</templateTop>
+				</labelSpec>
+				<labelSpec ref="2X7_NonExpress">
+					<templateLeft>0.75</templateLeft>
+					<templateTop>5.80</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="EMI">
+		<uom>in</uom><!-- 	cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="EMI">
+					<templateLeft>0.49</templateLeft>
+					<templateTop>0.25</templateTop>
+				</labelSpec>
+				<labelSpec ref="EMI">
+					<templateLeft>0.49</templateLeft>
+					<templateTop>5.65</templateTop>
+				</labelSpec>
+			</page>
+			<page number="2">
+				<labelSpec ref="EMI">
+					<templateLeft>0.49</templateLeft>
+					<templateTop>0.25</templateTop>
+				</labelSpec>
+				<labelSpec ref="EMI">
+					<templateLeft>0.49</templateLeft>
+					<templateTop>5.69</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="4x6_NonExp">
+		<uom>in</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="4x6_NonExp">
+					<templateLeft>2.24</templateLeft>
+					<templateTop>2.5</templateTop>
+				</labelSpec>
+			</page>
+			<page number="2">
+				<labelSpec ref="4x6_NonExp">
+					<templateLeft>2.24</templateLeft>
+					<templateTop>2.5</templateTop>
+				</labelSpec>
+			</page>
+			<page number="3">
+				<labelSpec ref="4x6_NonExp">
+					<templateLeft>2.24</templateLeft>
+					<templateTop>2.5</templateTop>
+				</labelSpec>
+			</page>
+			<page number="4">
+				<labelSpec ref="4x6_NonExp">
+					<templateLeft>2.24</templateLeft>
+					<templateTop>2.5</templateTop>
+				</labelSpec>
+			</page>
+			<page number="5">
+				<labelSpec ref="4x6_NonExp">
+					<templateLeft>2.24</templateLeft>
+					<templateTop>2.5</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="SL_250">
+		<uom>mm</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="SL_250">
+					<templateLeft>0</templateLeft>
+					<templateTop>0</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="#10">
+		<uom>mm</uom>	<!-- cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<labelSpec ref="#10">
+					<templateLeft>0</templateLeft>
+					<templateTop>0</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+	<labelTypeConfig prefix="8.5X11_NonExpress_Priority">
+		<uom>mm</uom>	<!-- mm, cm, in, px(in case of image) -->
+		<resolution></resolution>	<!-- Required only for image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="8.5X11_NonExpress_Priority">
+					<templateLeft>31.74</templateLeft>
+					<templateTop>34.28</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+</labelsConfig>

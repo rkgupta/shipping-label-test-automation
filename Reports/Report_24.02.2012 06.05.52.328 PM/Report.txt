@@ -1,0 +1,42 @@
+Comparison result for labels F:\My Documents\dev_workspace\PBWSTestFramework\master and F:\My Documents\dev_workspace\PBWSTestFramework\test 
+dated 24.02.2012 06.05.52.360 PM
+----------------------------------------------------------------------------
+1.Comparing test label ExpMail8.5X11Domestic_landscape-test1.pdf with corresponding master label.
+	Page 1: No difference found.
+
+2.Comparing test label SendSuite_img-test1.png with corresponding master label.
+	Page 1: No difference found.
+
+3.Comparing test label ExpMail8.5X11Domestic_landscape-test2.pdf with corresponding master label.
+	Page 1: Difference found. 
+			Text Difference(s):
+				Missing text in test label: [21.90, 6.40, 21.90, Ba]
+				Additional text in test label: [17.22, 1.72, 17.22, Pl]
+			Visual Difference(s):
+				See the Diff Image @ F:\My Documents\dev_workspace\PBWSTestFramework\Reports\Report_24.02.2012 06.05.52.328 PM\DiffImage\diff-ExpMail8.5X11Domestic_landscape-test2_1.jpeg
+
+
+4.Comparing test label 2X7_NonExpress_Domestic-Output.GIF with corresponding master label.
+	Master/test label might be corrupt.
+
+5.Comparing test label 2X7_NonExpress_Domestic-Output.pdf with corresponding master label.
+	Page 1: Difference found. 
+			Text Difference(s):
+				Missing text in test label: [Nancy Drew, Carolyn Keene]
+				Additional text in test label: [Tanuj]
+			Visual Difference(s):
+				See the Diff Image @ F:\My Documents\dev_workspace\PBWSTestFramework\Reports\Report_24.02.2012 06.05.52.328 PM\DiffImage\diff-2X7_NonExpress_Domestic-Output_1.jpeg
+
+
+6.Comparing test label ExpMail8.5X11Domestic_landscape-test3.pdf with corresponding master label.
+	Page 1: Difference found. 
+			Text Difference(s):
+				Missing text in test label: [N, cy Drew, Carolyn Keene, N, cy Drew, Carolyn Keene]
+				Additional text in test label: [T, uj, Rajni Enterprises, T, uj, Rajni Enterprises]
+			Visual Difference(s):
+				See the Diff Image @ F:\My Documents\dev_workspace\PBWSTestFramework\Reports\Report_24.02.2012 06.05.52.328 PM\DiffImage\diff-ExpMail8.5X11Domestic_landscape-test3_1.jpeg
+
+
+
+Time taken to compare the labels: 0 m 36 s 562 ms
+-------------------------------------END------------------------------------

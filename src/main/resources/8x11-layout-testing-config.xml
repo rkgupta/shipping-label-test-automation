@@ -1,0 +1,64 @@
+<labelsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<templates> 
+		<template id="8.5X11_NonExpress_Priority" padding="1" lineWidth="1"> <!-- padding applies to all the sides(viz. left, right, top, bottom) and all the regions inside the template until and unless overridden-->
+																			<!-- lineWidth applies to all the sides of bounding rectangle(viz. left, right, top, bottom) and all the regions inside the template until and unless overridden-->
+			
+			<region id="from_address" lineWidth="0.17" lineWidthLeft="0" lineWidthBottom="0" paddingTop="1.53">
+			<!-- 
+				With the values specified as above, following will be the values for each side for region with id='from_address':
+				paddingLeft = 1			(using the template level value, as it was not overridden)
+				paddingRight = 1		(using the template level value, as it was not overridden)
+				paddingTop = 1.53		(using the region level value, as it was overridden)
+				paddingBottom = 1		(using the template level value, as it was not overridden)
+				
+				lineWidthLeft = 0		(using the region level value, as it was overridden)
+				lineWidthRight = 0.17	(using the region level value, as it was overridden)
+				lineWidthTop = 0.17		(using the region level value, as it was overridden)
+				lineWidthBottom = 0		(using the region level value, as it was overridden)
+			 -->
+				<left>98.25</left>
+				<top>0</top>
+				<width>15.95</width>
+				<height>68.7</height>
+			</region>
+			<region id="mail_class_name" lineWidth="0.17" paddingTop="16.52" paddingBottom="16.05">
+				<left>114.22</left>
+				<top>0</top>
+				<width>9.16</width>
+				<height>101.94</height>
+			</region>
+			<region id="qr_code" lineWidth="0">
+				<left>126.24</left>
+				<top>76.7</top>
+				<width>23</width>
+				<height>23</height>
+			</region>
+			<region id="barcode" lineWidth="0" padding="2">
+				<left>25.24</left>
+				<top>6.7</top>
+				<width>22.99</width>
+				<height>88</height>
+			</region>
+			<region id="to_address" lineWidth="0" lineWidthTop="0.17" paddingTop="11.52">
+				<left>70.25</left>
+				<top>0</top>
+				<width>20.99</width>
+				<height>47.7</height>
+			</region>
+		</template>
+	</templates>
+	 
+	<labelTypeConfig prefix="8.5X11_NonExpress_Priority">	<!-- prefix value should be prefixed in the file name followed by hyphen(-) to use this specs-->
+		<uom>mm</uom>	<!-- mm, cm, in, px -->
+		<resolution></resolution>	<!-- Required when coordinates are measured from pdf and used for checking layout in image -->
+		<pageList>
+			<page number="1">
+				<!-- Coordinates of the template box w.r.t. the page origin -->
+				<labelSpec ref="8.5X11_NonExpress_Priority">
+					<templateLeft>31.74</templateLeft>
+					<templateTop>34.28</templateTop>
+				</labelSpec>
+			</page>
+		</pageList>
+	</labelTypeConfig>
+</labelsConfig>

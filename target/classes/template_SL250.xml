@@ -1,0 +1,32 @@
+<template id="SL_250" padding="-2">
+	<region id="addressed_to">
+		<left>20</left>
+		<top>33</top>
+		<width>77</width>
+		<height>92</height>
+	</region>
+	<region id="postage">
+		<left>121</left>
+		<top>33</top>
+		<width>76</width>
+		<height>38</height>
+	</region>
+	<region id="return_address">
+		<left>121</left>
+		<top>93</top>
+		<width>50</width>
+		<height>32</height>
+	</region>
+	<region id="sender_address">
+		<left>20</left>
+		<top>190</top>
+		<width>88</width>
+		<height>38</height>
+	</region>
+	<region id="receipient_address_with_article_num">
+		<left>130</left>
+		<top>190</top>
+		<width>68</width>
+		<height>41</height>
+	</region>
+</template>
